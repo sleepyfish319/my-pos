@@ -43,7 +43,16 @@ button:active { transform: scale(0.96); transition: transform 0.1s; }
 </head>
 <body>
 <div id="root"></div>
-
+  
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18",
+    "react/jsx-runtime": "https://esm.sh/react@18/jsx-runtime"
+  }
+}
+</script>  
+  
 <script type="text/babel" data-type="module">
 const { useState, useEffect, useMemo, useRef, useCallback, memo } = React;
 
